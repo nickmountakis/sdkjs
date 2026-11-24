@@ -35,7 +35,7 @@ function(window, undefined) {
 
 	const MAX_LABELS_COUNT = 300;
 	const MAX_SERIES_COUNT = 255;
-	const MAX_POINTS_COUNT = 4096;
+	const MAX_POINTS_COUNT = Infinity; // PMREB: laboratory curves hold up to millions of points (upstream: 4096)
 	const MIN_STOCK_COUNT = 4;
 // Import
 	const c_oAscChartType = AscCommon.c_oAscChartType;
